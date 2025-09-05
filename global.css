@@ -371,7 +371,6 @@ body {
     display: block;
 }
 
-/* Убираем “карточный” фон у выбора карты */
 .form.map-choice {
     background: transparent;
     border-radius: 0;
@@ -385,12 +384,38 @@ body {
     margin: 12px auto 0;
 }
 
-/* Кнопки — на всю ширину контейнера */
 .map-choice__btn {
     width: 100%;
     padding: 12px 14px;
     font-size: 15px;
     border-radius: 6px;
+}
+
+.map-choice__btn {
+    display: inline-block;
+    width: min(100%, 420px);
+    padding: 14px 16px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Onest SemiBold", sans-serif;
+    cursor: pointer;
+    transition: transform 120ms ease, filter 120ms ease;
+}
+
+.map-choice__btn--day6 {
+    background: var(--color-lavender);
+    color: #fff;
+}
+
+.map-choice__btn--day7 {
+    background: var(--color-sea);
+    color: #fff;
+}
+
+.map-choice__btn:active {
+    transform: translateY(1px);
+    filter: brightness(0.96);
 }
 
 .clear-btn {
