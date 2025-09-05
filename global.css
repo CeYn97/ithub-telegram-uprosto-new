@@ -371,48 +371,26 @@ body {
     display: block;
 }
 
+/* Убираем “карточный” фон у выбора карты */
 .form.map-choice {
-    min-height: unset;
-    /* было 400px */
-    padding: 16px;
-    /* было 24px */
-    width: min(100%, 360px);
-    /* было до 420px */
-    gap: 12px;
-    /* удобный зазор между элементами */
-    justify-content: center;
-    /* вместо space-around, чтобы блок не растягивался по высоте */
-}
-
-.map-choice {
-    gap: 16px;
-}
-
-.map-choice__btn {
-    display: inline-block;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    min-height: 0;
     width: min(100%, 420px);
-    padding: 14px 16px;
-    border: 0;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: "Onest SemiBold", sans-serif;
-    cursor: pointer;
-    transition: transform 120ms ease, filter 120ms ease;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 12px auto 0;
 }
 
-.map-choice__btn--day6 {
-    background: var(--color-lavender);
-    color: #fff;
-}
-
-.map-choice__btn--day7 {
-    background: var(--color-sea);
-    color: #fff;
-}
-
-.map-choice__btn:active {
-    transform: translateY(1px);
-    filter: brightness(0.96);
+/* Кнопки — на всю ширину контейнера */
+.map-choice__btn {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 6px;
 }
 
 .clear-btn {
