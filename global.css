@@ -371,15 +371,13 @@ body {
     display: block;
 }
 
-/* Контейнер с двумя кнопками выбора */
 .map-choice {
     gap: 16px;
 }
 
-/* Универсальная кнопка выбора карты */
 .map-choice__btn {
     display: inline-block;
-    width: min(100%, 420px);
+    width: min(100%, 220px);
     padding: 14px 16px;
     border: 0;
     border-radius: 8px;
