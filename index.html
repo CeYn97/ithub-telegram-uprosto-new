@@ -51,8 +51,8 @@
           подарков, который состояться в 13:50, 15:50 и 17:50 в каждый из дней
           Фестиваля.
         </p>
+        <button id="clear-btn" class="btn clear-btn">Сбросить ключи</button>
       </section>
-      <button id="open-map-btn" class="btn btn-map">Открыть карту</button>
     </template>
 
     <template id="categories">
@@ -66,7 +66,8 @@
 
       <!-- <h1 class="game-heading">Собери свой образовательный пазл</h1> -->
       <h3 class="game-status">
-        Выберите интересующие категории&nbsp;<br /><span></span>
+        Выберите интересующие категории&nbsp;<br />(заполнено
+        <span>&nbsp;</span>/9)
       </h3>
       <section class="categories">
         <svg
@@ -394,7 +395,7 @@
           <h3 class="lottery-subheading">Выберите удобный слот</h3>
 
           <div class="lottery-tile-group lottery-tile-group--date">
-            <div class="lottery-input-container" data-date="2025-09-04">
+            <div class="lottery-input-container" data-date="2025-09-06">
               <input
                 id="date-1"
                 class="lottery-radio-button"
@@ -402,12 +403,12 @@
                 name="date"
               />
               <div class="lottery-radio-tile">
-                <div class="lottery-icon">04</div>
+                <div class="lottery-icon">06</div>
                 <label for="date-1" class="lottery-tile-label">Сентября</label>
               </div>
             </div>
 
-            <div class="lottery-input-container" data-date="2025-09-05">
+            <div class="lottery-input-container" data-date="2025-09-07">
               <input
                 id="date-2"
                 class="lottery-radio-button"
@@ -415,7 +416,7 @@
                 name="date"
               />
               <div class="lottery-radio-tile">
-                <div class="lottery-icon">05</div>
+                <div class="lottery-icon">07</div>
                 <label for="date-2" class="lottery-tile-label">Сентября</label>
               </div>
             </div>
@@ -425,8 +426,8 @@
         <section class="lottery-tile-group lottery-tile-group--time hidden">
           <div
             class="lottery-input-container mini"
-            data-date="2025-09-04"
-            data-time="2:20"
+            data-date="2025-09-06"
+            data-time="13:50"
           >
             <input
               id="time-1"
@@ -435,13 +436,13 @@
               name="time"
             />
             <div class="lottery-radio-tile">
-              <label for="time-1" class="lottery-tile-label">2:20</label>
+              <label for="time-1" class="lottery-tile-label">13:50</label>
             </div>
           </div>
           <div
             class="lottery-input-container mini"
-            data-date="2025-09-04"
-            data-time="2:25"
+            data-date="2025-09-06"
+            data-time="15:50"
           >
             <input
               id="time-2"
@@ -450,13 +451,13 @@
               name="time"
             />
             <div class="lottery-radio-tile">
-              <label for="time-2" class="lottery-tile-label">2:25</label>
+              <label for="time-2" class="lottery-tile-label">15:50</label>
             </div>
           </div>
           <div
             class="lottery-input-container mini"
-            data-date="2025-09-04"
-            data-time="2:30"
+            data-date="2025-09-06"
+            data-time="17:50"
           >
             <input
               id="time-3"
@@ -465,7 +466,7 @@
               name="time"
             />
             <div class="lottery-radio-tile">
-              <label for="time-3" class="lottery-tile-label">2:30</label>
+              <label for="time-3" class="lottery-tile-label">17:50</label>
             </div>
           </div>
         </section>
