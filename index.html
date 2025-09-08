@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./global.css" />
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg" />
     <title>Просто учиться</title>
-    <script type="module" crossorigin src="./assets/index-CR7rNAEY.js"></script>
+    <script type="module" crossorigin src="./assets/index-Cpst_7RT.js"></script>
   </head>
 
   <body>
@@ -474,16 +474,17 @@
     </template>
 
     <template id="map">
-      <section class="map-page">
+      <div class="map-page">
         <iframe
           class="map-iframe"
           src="https://fest.prosto.education/map/609"
-          title="Интерактивная карта"
-          loading="lazy"
+          allow="geolocation; fullscreen; clipboard-read; clipboard-write"
+          allowfullscreen
+          loading="eager"
           referrerpolicy="no-referrer-when-downgrade"
-          allow="fullscreen"
-        ></iframe>
-      </section>
+        >
+        </iframe>
+      </div>
     </template>
 
     <main id="app"></main>
