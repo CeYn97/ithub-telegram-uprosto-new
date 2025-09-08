@@ -68,7 +68,10 @@ body {
     margin-top: 28px;
     text-align: center;
     color: var(--color-orange);
+    
+    /* font-size: 1rem; */
     font-size: 20px;
+    
 }
 
 .game-status {
